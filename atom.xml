@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yetta3370/webdesign.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-03-17T08:10:28.867Z</updated>
+    <title>Yetta</title>
+    <updated>2020-03-17T08:31:02.785Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yetta3370/webdesign.github.io"/>
     <link rel="self" href="https://yetta3370/webdesign.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://yetta3370/webdesign.github.io/images/avatar.png</logo>
     <icon>https://yetta3370/webdesign.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, Yetta</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://yetta3370/webdesign.github.io/post/hello-gridea/</id>

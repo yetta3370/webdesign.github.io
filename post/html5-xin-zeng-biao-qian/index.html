@@ -1,103 +1,95 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>HTML5新增标签与属性 | Yetta</title>
+<meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://yetta3370.github.io/webdesign.github.io/favicon.ico?v=1589716620630">
+<link rel="shortcut icon" href="https://yetta3370.github.io/webdesign.github.io/favicon.ico?v=1589716676275">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://yetta3370.github.io/webdesign.github.io/styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="html5对HTML进行了重大修改，具有新的元素/属性和行为，增加了新特性，如语义特性、本地存储特性、设备兼容特性、连接特性、网页多媒体特性、三维图形及特效特性、性能与集成特性、css3特性等。虽然HTML5的一些特性仍然不被某些浏览器支持..." />
-    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://yetta3370.github.io/webdesign.github.io">
-        <img src="https://yetta3370.github.io/webdesign.github.io/images/avatar.png?v=1589716620630" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://yetta3370.github.io/webdesign.github.io">
+        <img class="avatar" src="https://yetta3370.github.io/webdesign.github.io/images/avatar.png?v=1589716676275" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://yetta3370.github.io/webdesign.github.io">
         <h1 class="site-title">Yetta</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="https://yetta3370.github.io/webdesign.github.io/index" class="site-nav">
+          <a href="https://yetta3370.github.io/webdesign.github.io/index" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="https://yetta3370.github.io/webdesign.github.io/archives" class="site-nav">
+          <a href="https://yetta3370.github.io/webdesign.github.io/archives" class="menu purple-link">
             归档
           </a>
         
       
         
-          <a href="https://yetta3370.github.io/webdesign.github.io/tags" class="site-nav">
+          <a href="https://yetta3370.github.io/webdesign.github.io/tags" class="menu purple-link">
             标签
           </a>
         
       
         
-          <a href="https://yetta3370.github.io/webdesign.github.io/post/about" class="site-nav">
+          <a href="https://yetta3370.github.io/webdesign.github.io/post/about" class="menu purple-link">
             关于
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      温故而知新
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://yetta3370.github.io/webdesign.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">HTML5新增标签与属性</h2>
-            <div class="post-date">2020-03-17</div>
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://yetta3370.github.io/webdesign.github.io/post-images/html5-xin-zeng-biao-qian.jpg')">
+            </div>
+          
+          <h2 class="post-title">HTML5新增标签与属性</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-03-17</span>
             
-              <div class="feature-container" style="background-image: url('https://yetta3370.github.io/webdesign.github.io/post-images/html5-xin-zeng-biao-qian.jpg')">
-              </div>
-            
-            <div class="post-content" v-pre>
-              <p>html5对HTML进行了重大修改，具有新的元素/属性和行为，增加了新特性，如语义特性、本地存储特性、设备兼容特性、连接特性、网页多媒体特性、三维图形及特效特性、性能与集成特性、css3特性等。虽然HTML5的一些特性仍然不被某些浏览器支持，但它是一种发展趋势。</p>
+          </div>
+          <div class="post-content">
+            <p>html5对HTML进行了重大修改，具有新的元素/属性和行为，增加了新特性，如语义特性、本地存储特性、设备兼容特性、连接特性、网页多媒体特性、三维图形及特效特性、性能与集成特性、css3特性等。虽然HTML5的一些特性仍然不被某些浏览器支持，但它是一种发展趋势。</p>
 <p>👉<strong>新增语义化标签</strong></p>
 <p><code>&lt;header&gt;头部标签&lt;/header&gt;</code><br>
 <code>&lt;nav&gt;导航标签&lt;/nav&gt;</code><br>
@@ -138,31 +130,45 @@ video语法格式：<br>
 ✏️新增表单属性<br>
 <img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712413317.PNG" alt="" loading="lazy"></p>
 
-            </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://yetta3370.github.io/webdesign.github.io/post/about/">
-                  <h3 class="post-title">
-                    关于
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
           </div>
-
         </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://yetta3370.github.io/webdesign.github.io/post/about/">
+              <h3 class="post-title">
+                下一篇：关于
+              </h3>
+            </a>
+          </div>
+          
       </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://yetta3370.github.io/webdesign.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -172,8 +178,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 

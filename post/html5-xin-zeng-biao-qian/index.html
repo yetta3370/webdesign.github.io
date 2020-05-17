@@ -2,24 +2,16 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>关于 | Yetta</title>
+<title>HTML5新增标签与属性 | Yetta</title>
 <link rel="shortcut icon" href="https://yetta3370.github.io/webdesign.github.io/favicon.ico?v=1589715944892">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://yetta3370.github.io/webdesign.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="关于 | Yetta - Atom Feed" href="https://yetta3370.github.io/webdesign.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="HTML5新增标签与属性 | Yetta - Atom Feed" href="https://yetta3370.github.io/webdesign.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
-本站记录了我学习过程中的笔记或总结。
-
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
+    <meta name="description" content="html5对HTML进行了重大修改，具有新的元素/属性和行为，增加了新特性，如语义特性、本地存储特性、设备兼容特性、连接特性、网页多媒体特性、三维图形及特效特性、性能与集成特性、css3特性等。虽然HTML5的一些特性仍然不被某些浏览器支持..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -82,44 +74,66 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              关于
+              HTML5新增标签与属性
             </h2>
             <div class="post-info">
               <span>
-                2019-01-25
+                2020-03-17
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
             </div>
             
-              <img class="post-feature-image" src="https://yetta3370.github.io/webdesign.github.io/post-images/about.jpg" alt="">
+              <img class="post-feature-image" src="https://yetta3370.github.io/webdesign.github.io/post-images/html5-xin-zeng-biao-qian.jpg" alt="">
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝<br>
-本站记录了我学习过程中的笔记或总结。</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                <p>html5对HTML进行了重大修改，具有新的元素/属性和行为，增加了新特性，如语义特性、本地存储特性、设备兼容特性、连接特性、网页多媒体特性、三维图形及特效特性、性能与集成特性、css3特性等。虽然HTML5的一些特性仍然不被某些浏览器支持，但它是一种发展趋势。</p>
+<p>👉<strong>新增语义化标签</strong></p>
+<p><code>&lt;header&gt;头部标签&lt;/header&gt;</code><br>
+<code>&lt;nav&gt;导航标签&lt;/nav&gt;</code><br>
+<code>&lt;article&gt;内容标签&lt;/article&gt;</code><br>
+<code>&lt;section&gt;块级标签&lt;/section&gt;</code><br>
+<code>&lt;aside&gt;侧边栏标签&lt;/aside&gt;</code><br>
+<code>&lt;footer&gt;尾部标签&lt;/footer&gt;</code></p>
+<p>这种语义化标签主要针对搜索引擎的<br>
+这些新标签页面中可以使用多次<br>
+在ie9中需要把这些元素（默认为行内元素）转换为块级元素<br>
+这些标签主要用于移动端</p>
+<p>👉<strong>多媒体标签</strong><br>
+✏️<strong>audio</strong><br>
+audio语法格式：<br>
+<code>&lt;audio src=&quot;文件地址&quot; controls=&quot;controls&quot;&gt;&lt;/audio&gt;</code><br>
+<img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712142952.PNG" alt="" loading="lazy"><br>
+<code>&lt;audio controls=&quot;controlos&quot;&gt;</code><br>
+<code>&lt;source src=&quot;a.mp3&quot; type=&quot;audio/mpeg&quot;&gt;</code><br>
+<code>&lt;source src=&quot;a.ogg&quot; type=&quot;audio/ogg&quot;&gt;</code><br>
+<code>您的浏览器不支持音频播放</code><br>
+<code>&lt;/audio&gt;</code><br>
+<img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712174747.PNG" alt="" loading="lazy"><br>
+chrome浏览器禁用了autoplay属性<br>
+不同浏览器支持不同的格式，所以我们要为音频准备多个格式</p>
+<p>✏️<strong>video</strong><br>
+video语法格式：<br>
+<code>&lt;video src=&quot;文件地址&quot;&gt;&lt;/video&gt;</code><br>
+<img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712335025.PNG" alt="" loading="lazy"><br>
+<code>&lt;video controls=&quot;controlos&quot;&gt;</code><br>
+<code>&lt;source src=&quot;a.mp4&quot; type=&quot;audio/mp4&quot;&gt;</code><br>
+<code>&lt;source src=&quot;a.ogg&quot; type=&quot;audio/ogg&quot;&gt;</code><br>
+<code>您的浏览器不支持视频播放</code><br>
+<code>&lt;/video&gt;</code><br>
+<img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712353324.PNG" alt="" loading="lazy"></p>
+<p>👉<strong>表单属性</strong><br>
+✏️新增input表单属性<br>
+<img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712401436.PNG" alt="" loading="lazy"><br>
+✏️新增表单属性<br>
+<img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712413317.PNG" alt="" loading="lazy"></p>
 
               </div>
               <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
-</ul>
-</li>
-</ul>
-
+                
               </div>
             </div>
           </article>
@@ -128,9 +142,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://yetta3370.github.io/webdesign.github.io/post/hello-gridea/">
+            <a href="https://yetta3370.github.io/webdesign.github.io/post/about/">
               <h3 class="post-title">
-                Hello Gridea
+                关于
               </h3>
             </a>
           </div>

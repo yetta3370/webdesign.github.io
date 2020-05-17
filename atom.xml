@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yetta3370.github.io/webdesign.github.io</id>
     <title>Yetta</title>
-    <updated>2020-05-17T11:30:37.658Z</updated>
+    <updated>2020-05-17T11:45:52.853Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yetta3370.github.io/webdesign.github.io"/>
     <link rel="self" href="https://yetta3370.github.io/webdesign.github.io/atom.xml"/>
@@ -32,6 +32,54 @@
 <p>🍀opera以前版本的浏览器的内核为prespreto，传言prespreto对JavaScript有着最快的解析速度。在Opera12.10版本以后的浏览器采用的都是Blink内核。</p>
 <p><strong>👉Safafi浏览器----WebKit</strong></p>
 <p>🍀Safari 是苹果公司开发的浏览器，Safari 所用浏览器内核的名称是大名鼎鼎的 WebKit。 Safari 在 2003 年 1 月 7 日首度发行测试版，并成为 Mac OS X10.3 及之后版本的默认浏览器，也成为苹果其它系列产品的指定浏览器。Webkit引擎包含WebCore排版引擎及JavaScriptCore解析引擎，均是从KDE的KHTML及KJS引擎衍生而来，它们都是自由软件，在GPL条约下授权，同时支持BSD系统的开发。所以Webkit也是自由软件，同时开放源代码。在安全方面不受IE、Firefox的制约，所以Safari浏览器在国内还是很安全的。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[HTML5新增标签与属性]]></title>
+        <id>https://yetta3370.github.io/webdesign.github.io/post/html5-xin-zeng-biao-qian/</id>
+        <link href="https://yetta3370.github.io/webdesign.github.io/post/html5-xin-zeng-biao-qian/">
+        </link>
+        <updated>2020-03-17T10:36:58.000Z</updated>
+        <content type="html"><![CDATA[<p>html5对HTML进行了重大修改，具有新的元素/属性和行为，增加了新特性，如语义特性、本地存储特性、设备兼容特性、连接特性、网页多媒体特性、三维图形及特效特性、性能与集成特性、css3特性等。虽然HTML5的一些特性仍然不被某些浏览器支持，但它是一种发展趋势。</p>
+<p>👉<strong>新增语义化标签</strong></p>
+<p><code>&lt;header&gt;头部标签&lt;/header&gt;</code><br>
+<code>&lt;nav&gt;导航标签&lt;/nav&gt;</code><br>
+<code>&lt;article&gt;内容标签&lt;/article&gt;</code><br>
+<code>&lt;section&gt;块级标签&lt;/section&gt;</code><br>
+<code>&lt;aside&gt;侧边栏标签&lt;/aside&gt;</code><br>
+<code>&lt;footer&gt;尾部标签&lt;/footer&gt;</code></p>
+<p>这种语义化标签主要针对搜索引擎的<br>
+这些新标签页面中可以使用多次<br>
+在ie9中需要把这些元素（默认为行内元素）转换为块级元素<br>
+这些标签主要用于移动端</p>
+<p>👉<strong>多媒体标签</strong><br>
+✏️<strong>audio</strong><br>
+audio语法格式：<br>
+<code>&lt;audio src=&quot;文件地址&quot; controls=&quot;controls&quot;&gt;&lt;/audio&gt;</code><br>
+<img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712142952.PNG" alt="" loading="lazy"><br>
+<code>&lt;audio controls=&quot;controlos&quot;&gt;</code><br>
+<code>&lt;source src=&quot;a.mp3&quot; type=&quot;audio/mpeg&quot;&gt;</code><br>
+<code>&lt;source src=&quot;a.ogg&quot; type=&quot;audio/ogg&quot;&gt;</code><br>
+<code>您的浏览器不支持音频播放</code><br>
+<code>&lt;/audio&gt;</code><br>
+<img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712174747.PNG" alt="" loading="lazy"><br>
+chrome浏览器禁用了autoplay属性<br>
+不同浏览器支持不同的格式，所以我们要为音频准备多个格式</p>
+<p>✏️<strong>video</strong><br>
+video语法格式：<br>
+<code>&lt;video src=&quot;文件地址&quot;&gt;&lt;/video&gt;</code><br>
+<img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712335025.PNG" alt="" loading="lazy"><br>
+<code>&lt;video controls=&quot;controlos&quot;&gt;</code><br>
+<code>&lt;source src=&quot;a.mp4&quot; type=&quot;audio/mp4&quot;&gt;</code><br>
+<code>&lt;source src=&quot;a.ogg&quot; type=&quot;audio/ogg&quot;&gt;</code><br>
+<code>您的浏览器不支持视频播放</code><br>
+<code>&lt;/video&gt;</code><br>
+<img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712353324.PNG" alt="" loading="lazy"></p>
+<p>👉<strong>表单属性</strong><br>
+✏️新增input表单属性<br>
+<img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712401436.PNG" alt="" loading="lazy"><br>
+✏️新增表单属性<br>
+<img src="https://yetta3370.github.io/webdesign.github.io/post-images/1589712413317.PNG" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>

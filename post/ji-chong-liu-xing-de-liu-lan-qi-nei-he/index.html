@@ -1,105 +1,118 @@
-
-<!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>几种流行的浏览器内核 | Yetta</title>
-<meta name="description" content="温故而知新">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://yetta3370.github.io/webdesign.github.io/favicon.ico?v=1589719788570">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<meta name="description" content="温故而知新" />
+<link rel="shortcut icon" href="https://yetta3370.github.io/webdesign.github.io/favicon.ico">
 <link rel="stylesheet" href="https://yetta3370.github.io/webdesign.github.io/styles/main.css">
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
+<script src="https://yetta3370.github.io/webdesign.github.io/media/js/jquery.min.js"></script>
+<script src="https://yetta3370.github.io/webdesign.github.io/media/js/masonry.pkgd.min.js"></script>
+<script src="https://yetta3370.github.io/webdesign.github.io/media/js/aos.js"></script>
+<script src="https://yetta3370.github.io/webdesign.github.io/media/js/pace.min.js"></script>
+<script src="https://yetta3370.github.io/webdesign.github.io/media/js/view-image.min.js"></script>
+<script src="https://yetta3370.github.io/webdesign.github.io/media/js/jquery.magnific-popup.min.js"></script>
+<script src="https://yetta3370.github.io/webdesign.github.io/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="🎤所谓的浏览器内核到底是什么呢？
+    浏览器引擎可分为渲染引擎和JS引擎，所谓的浏览器内核就是浏览器的渲染引擎，它也有很多别称，如排版引擎、解释引擎等。所谓引擎，即对一组核心功能模块的统称，这组功能模块提供API调用接口，用户通过浏览..." />
+    <meta name="keywords" content="浏览器内核" />
+    <script src="https://yetta3370.github.io/webdesign.github.io/media/js/waterfall.min.js"></script>
+    <script src="https://yetta3370.github.io/webdesign.github.io/media/js/prism.min.js"></script>
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://yetta3370.github.io/webdesign.github.io">
-        <img class="avatar" src="https://yetta3370.github.io/webdesign.github.io/images/avatar.png?v=1589719788570" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://yetta3370.github.io/webdesign.github.io">
-        <h1 class="site-title">Yetta</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="https://yetta3370.github.io/webdesign.github.io/index" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="https://yetta3370.github.io/webdesign.github.io/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="https://yetta3370.github.io/webdesign.github.io/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="https://yetta3370.github.io/webdesign.github.io/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          
-            <div class="feature-container" style="background-image: url('https://yetta3370.github.io/webdesign.github.io/post-images/ji-chong-liu-xing-de-liu-lan-qi-nei-he.jpg')">
+            <header id="header" class="grid-container">
+        <!-- start: .menu-wrapper -->
+        <div class="menu-mobile"> 
+          <i class="fa fa-reorder"></i>
+        </div>
+        <div class="menu-wrapper">
+          <div class="">
+            <div class="logo">
+              <a href="https://yetta3370.github.io/webdesign.github.io"><img src="" alt=""></a>
             </div>
-          
-          <h2 class="post-title">几种流行的浏览器内核</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2020-03-17</span>
-            
-              <span>
-                <i class="icon-pricetags-outline"></i>
+            <!-- start: .main-nav -->
+
+            <nav class="main-nav grid-container grid-parent">
+              <ul id="menu-header" class="menu gradient-effect">
+                <li class=""><a href="https://yetta3370.github.io/webdesign.github.io" class="menu">首页</a></li>
                 
-                  <a href="https://yetta3370.github.io/webdesign.github.io/tag/cT3Oz83yb/">
-                    浏览器内核
-                    
-                  </a>
+                  <li class="" >
+                    <a href="https://yetta3370.github.io/webdesign.github.io/index" class="menu">
+                      首页
+                    </a>
+                  </li>
                 
-              </span>
-            
+                  <li class="" >
+                    <a href="https://yetta3370.github.io/webdesign.github.io/archives" class="menu">
+                      归档
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="https://yetta3370.github.io/webdesign.github.io/tags" class="menu">
+                      标签
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="https://yetta3370.github.io/webdesign.github.io/post/about" class="menu">
+                      关于
+                    </a>
+                  </li>
+                
+                <li class="search-menu-item hide-on-mobile hide-on-tablet"><a href="#search-lightbox" class="lightbox mfp-inline"><i class="fa fa-search-line"></i></a></li>
+              </ul>
+            </nav>
+            <a href="#search-lightbox" class="lightbox epcl-search-button mfp-inline hide-on-tablet hide-on-desktop"><i class="fa fa-search-line"></i></a>
+            <!-- end: .main-nav -->
+            <div class="clear"></div>
+            <div class="border hide-on-tablet hide-on-mobile"></div>
+          </div>    
+          <div class="clear"></div>
+        </div>
+        <!-- end: .menu-wrapper -->
+        <div class="clear"></div>
+      </header>
+      <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
+        <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
+          <div class="search-wrapper section">
+            <form id="gridea-search-form" data-update="1590488602707" action="/search/index.html" class="search-form" _lpchecked="1">
+              <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
+              <button type="submit" class="submit" aria-label="Submit">
+                <i class="fa fa-search-line"></i>
+              </button>
+            </form>
           </div>
-          <div class="post-content">
-            <p>🎤<strong>所谓的浏览器内核到底是什么呢？</strong></p>
+        </div>
+      </div>
+
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
+
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://yetta3370.github.io/webdesign.github.io/post-images/ji-chong-liu-xing-de-liu-lan-qi-nei-he.jpg');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2020-03-17"><i class="fa fa-calendar"></i><span class="lately">2 个月前</span></time>
+              
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="https://yetta3370.github.io/webdesign.github.io/tag/cT3Oz83yb/" class="ctag ctag-0 ctag-cT3Oz83yb" aria-label="">浏览器内核</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">几种流行的浏览器内核</h1>
+            </div>
+          </div>
+        </div>  
+
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <p>🎤<strong>所谓的浏览器内核到底是什么呢？</strong></p>
 <pre><code>    浏览器引擎可分为渲染引擎和JS引擎，所谓的浏览器内核就是浏览器的渲染引擎，它也有很多别称，如排版引擎、解释引擎等。所谓引擎，即对一组核心功能模块的统称，这组功能模块提供API调用接口，用户通过浏览器外壳就可以调用内核的各种功能。浏览器内核主要负责请求网络链接，接收网页数据，整理讯息，并对网页语法进行解析，对网页进行布局、渲染和显示，它是浏览器运行的核心动力。
     由于各浏览器的内核不尽相同，它们各自对网页语法的解释也不一样，这样就会导致同一页面在不同内核的浏览器中展现出来是不一样的。
     目前市面上所使用的浏览器有很多种，以下是一些常见浏览器的介绍：
@@ -116,57 +129,170 @@
 <p><strong>👉Safafi浏览器----WebKit</strong></p>
 <p>🍀Safari 是苹果公司开发的浏览器，Safari 所用浏览器内核的名称是大名鼎鼎的 WebKit。 Safari 在 2003 年 1 月 7 日首度发行测试版，并成为 Mac OS X10.3 及之后版本的默认浏览器，也成为苹果其它系列产品的指定浏览器。Webkit引擎包含WebCore排版引擎及JavaScriptCore解析引擎，均是从KDE的KHTML及KJS引擎衍生而来，它们都是自由软件，在GPL条约下授权，同时支持BSD系统的开发。所以Webkit也是自由软件，同时开放源代码。在安全方面不受IE、Firefox的制约，所以Safari浏览器在国内还是很安全的。</p>
 
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://yetta3370.github.io/webdesign.github.io/post-images/html5-xin-zeng-biao-qian.jpg');"></div>
+                 <a href="https://yetta3370.github.io/webdesign.github.io/post/html5-xin-zeng-biao-qian/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2020-03-17">2020-03-17</time>
+                  <h4 class="title white no-margin">HTML5新增标签与属性</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://yetta3370.github.io/webdesign.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
+            
+              <div id="comments" class="bg-white hosted ">
+                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+              </div>
+              <div class="clear"></div>
+            
+
+            </div>
           </div>
+      </main>
+
+          <footer id="footer" class="grid-container">
+        <div class="widgets row gradient-effect">
+            <div class="default-sidebar border-effect">
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_epcl_posts_thumbs underline-effect">
+                  <h4 class="widget-title title white bordered">最新文章</h4>
+                  
+                  
+                  <article class="item post-0 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://yetta3370.github.io/webdesign.github.io/post/ji-chong-liu-xing-de-liu-lan-qi-nei-he/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://yetta3370.github.io/webdesign.github.io/post-images/ji-chong-liu-xing-de-liu-lan-qi-nei-he.jpg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2020-03-17">2020-03-17</time>
+                      <h4 class="title usmall">
+                        <a href="https://yetta3370.github.io/webdesign.github.io/post/ji-chong-liu-xing-de-liu-lan-qi-nei-he/">几种流行的浏览器内核</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-1 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://yetta3370.github.io/webdesign.github.io/post/html5-xin-zeng-biao-qian/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://yetta3370.github.io/webdesign.github.io/post-images/html5-xin-zeng-biao-qian.jpg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2020-03-17">2020-03-17</time>
+                      <h4 class="title usmall">
+                        <a href="https://yetta3370.github.io/webdesign.github.io/post/html5-xin-zeng-biao-qian/">HTML5新增标签与属性</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-2 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://yetta3370.github.io/webdesign.github.io/post/about/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://yetta3370.github.io/webdesign.github.io/post-images/about.jpg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2019-01-25">2019-01-25</time>
+                      <h4 class="title usmall">
+                        <a href="https://yetta3370.github.io/webdesign.github.io/post/about/">关于</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_tag_cloud underline-effect">
+                  <h4 class="widget-title title white bordered">标签云</h4>
+                  <div class="tagcloud">
+                    
+                      <a href="https://yetta3370.github.io/webdesign.github.io/tag/cT3Oz83yb/" class="ctag ctag-0 ctag-cT3Oz83yb" aria-label="">浏览器内核</a>
+                    
+                      <a href="https://yetta3370.github.io/webdesign.github.io/tag/xIq6N0tEE/" class="ctag ctag-1 ctag-xIq6N0tEE" aria-label="">Gridea</a>
+                    
+                  </div>
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="epcl_about-2" class="widget widget_epcl_about underline-effect">
+                  <h4 class="widget-title title white bordered">关于我</h4>
+                  <div class="avatar">
+                    <a href="" class="translate-effect thumb"><span class="fullimage cover" style="background-image: url(https://yetta3370.github.io/webdesign.github.io/images/avatar.png);"></span></a>
+                  </div>
+                  <div class="info">
+                    <h4 class="title small author-name gradient-effect no-margin"><a href="">Yetta</a></h4>
+                    <p class="founder">温故而知新</p>
+                    <div class="social">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                    </div> 
+                  </div>
+                  <div class="clear"></div>
+                  </section>
+              </div>
+
+            </div>
+            <div class="clear"></div>
         </div>
 
+        <div class="logo">
+          <a href="https://yetta3370.github.io/webdesign.github.io"><img src="" alt=""></a>
+        </div>
+        <p class="published border-effect">
+          ©2019 共 4 篇文章
+          <br/>
+          Theme <a href="https://gridea.dev/" target="_blank">「breek」</a> Powered by <a href="https://gridea.dev/" target="_blank">「Gridea」</a>
+        </p>
         
-          <div class="next-post">
-            <a class="purple-link" href="https://yetta3370.github.io/webdesign.github.io/post/html5-xin-zeng-biao-qian/">
-              <h3 class="post-title">
-                下一篇：HTML5新增标签与属性
-              </h3>
-            </a>
-          </div>
-          
-      </div>
+        <a href="javascript:void(0)" id="back-to-top" class="epcl-button dark" style="display:none">
+          <i class="fa fa-arrow"></i>
+        </a>
+    </footer>
+    
+    <div class="clear"></div>
+
+        
 
       
-
-      <div class="site-footer">
-  <div class="slogan">温故而知新</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://yetta3370.github.io/webdesign.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
+    <script src="https://yetta3370.github.io/webdesign.github.io/media/js/functions-post.js"></script>
 
     </div>
-    <script type="application/javascript">
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
-
+    <!-- end: #wrapper -->
   </body>
 </html>
